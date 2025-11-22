@@ -21,53 +21,6 @@ A full-stack web application built with **React** (frontend) and **FastAPI** (ba
 - 🔒 CORS configuration for cross-origin requests
 - 🔒 Input validation and sanitization
 
-## 📁 Project Structure
-
-```
-PrimeTrade intern assign/
-├── backend/                    # FastAPI Backend
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py            # FastAPI application entry
-│   │   ├── config.py          # Settings and configuration
-│   │   ├── database.py        # Database connection
-│   │   ├── models.py          # SQLAlchemy models
-│   │   ├── schemas.py         # Pydantic schemas
-│   │   ├── auth.py            # Authentication utilities
-│   │   └── routers/           # API routes
-│   │       ├── auth.py        # Auth endpoints
-│   │       ├── users.py       # User endpoints
-│   │       └── tasks.py       # Task endpoints
-│   ├── requirements.txt       # Python dependencies
-│   ├── .env.example           # Environment variables template
-│   └── .gitignore
-│
-└── frontend/                   # React Frontend
-    ├── src/
-    │   ├── components/        # Reusable components
-    │   │   ├── Navbar.jsx
-    │   │   ├── ProtectedRoute.jsx
-    │   │   ├── TaskCard.jsx
-    │   │   └── TaskModal.jsx
-    │   ├── context/           # React context
-    │   │   └── AuthContext.jsx
-    │   ├── pages/             # Page components
-    │   │   ├── Home.jsx
-    │   │   ├── Login.jsx
-    │   │   ├── Signup.jsx
-    │   │   ├── Dashboard.jsx
-    │   │   └── Profile.jsx
-    │   ├── services/          # API services
-    │   │   └── api.js
-    │   ├── App.jsx            # Main app component
-    │   ├── main.jsx           # Entry point
-    │   └── index.css          # Tailwind styles
-    ├── index.html
-    ├── package.json
-    ├── vite.config.js
-    ├── tailwind.config.js
-    └── postcss.config.js
-```
 
 ## 🛠️ Tech Stack
 
@@ -150,29 +103,13 @@ npm run dev
 
 Application will be available at: `http://localhost:3000`
 
-## 🎨 Frontend Features
+![home](screenshots/home.png)
 
-### Pages
-1. **Home** - Landing page with feature showcase
-2. **Login** - User authentication
-3. **Signup** - New user registration with validation
-4. **Dashboard** - Task management interface with:
-   - Statistics cards (pending, in progress, completed)
-   - Search and filter functionality
-   - Task creation modal
-   - Task cards with edit/delete actions
-5. **Profile** - User profile management
+#### localhost:3000/register
+![register](screenshots/register.png)
 
-### Components
-- **Navbar** - Responsive navigation with auth state
-- **ProtectedRoute** - Route guard component
-- **TaskCard** - Reusable task display component
-- **TaskModal** - Task creation/editing modal
+#### localhost:3000/login
+![login](screenshots/login.png)
 
-### Form Validation
-- Client-side validation for all forms
-- Real-time error feedback
-- Server-side validation enforcement
-- Password strength requirements
-- Email format validation
-- Username uniqueness check
+![register](screenshots/dashboard.png)
+
